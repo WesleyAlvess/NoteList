@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+  <title>Login</title>
+</head>
+
+<body>
+  <!-- Modal -->
+  <% if (message != "") { %>
+  <section class="message message-<%= type %>">
+    <p>
+      <%= message %>
+    </p>
+    <span id="close-message"><i class="bi bi-x-lg"></i></span>
+  </section>
+  <% } %>
+
+  <!-- Login -->
+  <section id="login">
+    <h1>Login</h1>
+    <form action="/login" method="post">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password">
+
+      <button type="submit" id="btn-login">Entrar</button>
+      <p>Não tem uma conta?</p>
+      <a href="/register">Sign up</a>
+    </form>
+  </section>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>

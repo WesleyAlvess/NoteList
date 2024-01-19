@@ -1,0 +1,241 @@
+
+/* Modal */
+.message{
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-danger{
+  background-color: #ffcd07;
+  color: #fff;
+}
+
+.message-success{
+  background-color: #168821;
+  color: #fff;
+}
+
+span#close-message{
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+span#close-message:hover{
+  color: orangered;
+}
+
+/* Login */
+
+body {
+  background-color: #1a1a1a; /* Cor de fundo escura */
+  color: #ffffff; /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
+}
+
+section#login, section#signup {
+  background-color: #3498db; /* Cor de fundo predominante azul */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  margin: 50px auto; /* Centralizado na página */
+  max-width: 400px; /* Largura máxima */
+  padding: 20px;
+  text-align: center; /* Texto centralizado */
+}
+
+h1 {
+  color: #ffffff; /* Cor do cabeçalho */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #ffffff; /* Cor das etiquetas */
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc; /* Cor da borda */
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2c3e50; /* Cor do botão */
+  color: #ffffff; /* Cor do texto do botão */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+  background-color: #1c2833; /* Cor do botão ao passar o mouse */
+}
+
+a {
+  color: #ffffff; /* Cor do link */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+/* Sign Up */
+
+section#signup {
+  background-color: #3498db; /* Cor de fundo predominante azul */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  margin: 50px auto; /* Centralizado na página */
+  max-width: 400px; /* Largura máxima */
+  padding: 20px;
+  text-align: center; /* Texto centralizado */
+}
+
+section#signup h1 {
+  color: #ffffff; /* Cor do cabeçalho */
+}
+
+section#signup form {
+  display: flex;
+  flex-direction: column;
+}
+
+section#signup label {
+  color: #ffffff; /* Cor das etiquetas */
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+section#signup input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc; /* Cor da borda */
+  border-radius: 5px;
+}
+
+section#signup button {
+  background-color: #2c3e50; /* Cor do botão */
+  color: #ffffff; /* Cor do texto do botão */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+section#signup button:hover {
+  background-color: #1c2833; /* Cor do botão ao passar o mouse */
+}
+
+section#signup a {
+  margin-top: 15px;
+  color: #ffffff; /* Cor do link */
+  text-decoration: none;
+}
+
+section#signup a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Tasks */
+
+
+header {
+  background-color: #3498db; /* Cor azul para o cabeçalho */
+  padding: 20px; /* Espaçamento interno para melhor visualização */
+  text-align: center; /* Centraliza o conteúdo do cabeçalho */
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+form {
+  margin-top: 5px;
+}
+
+form input[type="text"] {
+  padding: 8px;
+  margin-right: 5px;
+}
+
+form button {
+  padding: 8px 15px;
+  background-color: #2ecc71; /* Cor verde para o botão Adicionar/Atualizar */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+form button#updateBtn {
+  background-color: #e74c3c; /* Cor vermelha para o botão Atualizar */
+}
+
+#tasks {
+  background-color: #2c3e50; /* Cor azul escuro para a seção de tarefas */
+  padding: 20px; /* Espaçamento interno para melhor visualização */
+  border-radius: 10px; /* Borda arredondada para a seção de tarefas */
+  margin: 20px auto; /* Centraliza a seção na página */
+  width: 95%; /* Largura da seção */
+}
+
+ul {
+  list-style: none; /* Remove os marcadores de lista padrão */
+  padding: 0;
+}
+
+ul li{
+  background-color: #555353;
+  color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: #ffffff; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado padrão do link */
+  font-size: 18px;
+}
+
+#tasks ul #data{
+  font-size: 11px;
+}
+
+#update-delete {
+}
+
+
+
